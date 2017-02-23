@@ -1,0 +1,23 @@
+server:
+  port: 3000
+ 
+spring:
+  application:
+    name: order
+
+  cloud:
+    zookeeper:
+      config:
+        enabled: true
+        root: rootFolder 
+      discovery:
+        enabled: true
+        register: true
+
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+    
